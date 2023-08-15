@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+}
+**/Esta es la parte del diseño de las preguntas
+.contenedor-acordeon{
+    width: 100;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+.contenedor-acordeon h3{
+    text-align:right;
+    font-size: 47px;
+    margin-bottom: 35px;
+    font-family:'Times New Roman', Times, serif;
+}
+.acordeon{
+    background-color: #fff;
+}
+.acordeon label{
+    display: block;
+    padding: 20px;
+    font-size: 20px;
+    background: #1e4a6f;
+    color: #fff;
+    cursor: pointer;
+    margin-bottom: 2px;
+    transition: all 300ms ease;
+}
+.acordeon label:hover{
+    background: #A66750;
+}
+
+.acordeon .contenedor-acordeon{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.btn-acordeon:checked ~ .contenedor-acordeon{
+    max-height: 600px;
+    padding: 15px 0px;
+}
+.btn-acordeon{
+    display: none;
+}
+.contenedor-acordeon{
+    padding: 10px;
+    margin: 0px 10px
+}
+@media screen and (max-width:900px){
+    .contenedor-acordeon{
+        width: 90%;
+    }
+}
+**/este es el diseño del apartado de las instrucciones
+.instrucciones{
+    width: 100;
+    max-width: 800px;
+    margin: auto;
+    margin-top: 80px;
+}
+.instrucciones{
+    background: #fff;
+}
+.instrucciones label{
+    display: block;
+    padding: 20px;
+    font-size: 25px;
+    background: #1e4a6f;
+    color:#fff;
+    cursor:pointer;
+    margin-bottom: 0px;
+    transition: all 300ms ease;
+}
+.instrucciones label:hover{
+background: #A66750;
+}
+.instrucciones .instruccion_xd{
+    padding: 0px;
+    margin: 0px 20px;
+    max-height: 0px;
+    max-height: 0px;
+    overflow: hidden;
+    transition: all 300ms ease;
+}
+.bn_instrucciones:checked ~ .instruccion_xd{
+    max-height: 600px;
+    padding: 15px 0px;    
+}
+.bn_instrucciones{
+    display: none;
+}
+.ins{
+    margin: 100px 25px;
+}
+@media screen and (max-width:900px) {
+    .instrucciones{
+        width: 90%;
+    }
+}
+
+button{
+    border: 0;
+    background-image: linear-gradient(150deg, #9500ff,#09f,#00ddff);
+    border-radius: 8px;
+    color: #fff;
+    display: flex;
+    font-size: 18px;
+    padding: 4px;
+    cursor: pointer;
+    transition: .3ms;
+    
+}
+button span{
+    background-color: #111;
+    padding: 16px 24px;
+    border-radius: 6px;
+    transition: .3s;
+}
+button:hover span{
+    background: none;
+}
+button:active{
+    transform: scale(0.9);
+}
+.bt{
+    margin: 20px;
+}

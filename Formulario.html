@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UFT-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Test Politico</title>
+        <link rel="stylesheet" href="estformulario.css">
+        <link rel="stylesheet" href="cssgraf.css">
+        <link rel="icon" href="icno.ico">
+    </head>
+    <body>   
+        <ul class="menu">
+            <li><a href="Test.html">Menú</a></li>
+            <li><a href="Formulario.html">Test Politico</a></li>
+            <li><a href="resultados.html">Resultados</a></li>
+        </ul>
+    <div class="sep">
+        <div class="ins">
+            <div class="instrucciones">
+                <input type="radio" name="instrucciones" id="bn_instrucciones" class="bn_instrucciones">
+                <label for="bn_instrucciones">
+                    Instrucciones   
+                </label>
+                <div class="instruccion_xd">
+                    <p>Seleccione la respuesta con la que más se identifique. El test está dividido en 2 bloques, social y economía.</p>
+                    <br>
+                    <p>+  Escoja aquella con la que se identifique.</p><br>
+                    <p>+  Si no encuentra ninguna escoja la que va más con su pensamiento.</p>
+                    <p>+  Si ninguna de las opciones son similares a su forma de pensar puede no contestar.</p>
+                </div>
+            </div>    
+        </div>
+        <div class="contenedor-acordeon">
+            <h3>Test politico.</h3>
+            <!-primera pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon0" class="btn-acordeon">
+                <label for="btn-acordeon0">
+                    1.-Legalidad
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>Los gobernantes que hacen uso de los medios de comunicación del Estado como si fueran propios para informar sus actividades deberían:</label>
+                        <input type="radio" value="1" name="btn-acordeon0" onclick="respuesta(0,this)">Dejar de hacer uso de medios de comunicación del Estado en época electoral.<br>
+                        <input type="radio" value="2" name="btn-acordeon0" onclick="respuesta(0,this)">No contar acceso a dichos medios de comunicación.<br>
+                        <input type="radio" value="3" name="btn-acordeon0" onclick="respuesta(0,this)">Continuar haciendo uso de ellos, es su derecho a la libre expresión.
+                    </div>
+            </div>
+            <!-segunda pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon1" class="btn-acordeon">
+                <label for="btn-acordeon1">
+                    2.-Religión
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>La iglesia y el Estado a través de los años se han mantenido separados por mandato constitucional: </label>
+                        <input type="radio" value="1" name="btn-acordeon1" onclick="respuesta(1,this)">Deben mantenerse separados uno del otro.<br>
+                        <input type="radio" value="2" name="btn-acordeon1" onclick="respuesta(1,this)">Pueden trabajar juntos en temas sociales para fomentar valores y buenas costumbres.<br>
+                        <input type="radio" value="3" name="btn-acordeon1" onclick="respuesta(1,this)">La iglesia tiene poder de decisión en la esfera política.
+                    </div>
+            </div>
+            <!-tercera pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon2" class="btn-acordeon">
+                <label for="btn-acordeon2">
+                    3.-Militarización
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>En el 2019 se creó la Guardia Nacional, diría que:</label>
+                        <input type="radio" value="1" name="btn-acordeon2" onclick="respuesta(2,this)">Era necesario la creación de una Guarda Nacional que ayudara en labores civiles, pues el Ejercito Militar no tenía la capacidad.<br>
+                        <input type="radio" value="2" name="btn-acordeon2" onclick="respuesta(2,this)">Sólo fue una decisión política, no ha cumplido con las labores que le corresponden.<br>
+                        <input type="radio" value="3" name="btn-acordeon2" onclick="respuesta(2,this)">Es una institución que ha generado empleo, se nota su presencia en las calles y eso brinda mayor confiabilidad en las instituciones militares.
+                    </div>
+            </div>
+            <!-cuarta pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon3" class="btn-acordeon">
+                <label for="btn-acordeon3">
+                    4.-Drogas
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>Las drogas son un tema que aqueja a las familias:</label>
+                        <input type="radio" value="1" name="btn-acordeon3" onclick="respuesta(3,this)">Debe existir una ley para su regulación en uso recreativo. La violencia que existe es derivada por la falta de regular la venta, distribución y producción.<br>
+                        <input type="radio" value="2" name="btn-acordeon3" onclick="respuesta(3,this)">Se debe combatir al narcotráfico y crear leyes más severas para la delincuencia organizada.<br>
+                        <input type="radio" value="3" name="btn-acordeon3" onclick="respuesta(3,this)">Es un problema que nunca se va a resolver, corresponde a las familias inculcar valores como medio de prevención y no caer en el uso de sustancias ilícitas.
+                    </div>
+            </div>
+            <!-quinta pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon4" class="btn-acordeon">
+                <label for="btn-acordeon4">
+                    5.-Seguridad
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>Las decisiones en materia de seguridad han sido de los temas más importantes en los últimos años a nivel nacional:</label>
+                        <input type="radio" value="1" name="btn-acordeon" onclick="respuesta(4,this)">La inseguridad en el país cada día aumenta, no existe un plan que realmente garantice la seguridad de la ciudadanía.<br>
+                        <input type="radio" value="2" name="btn-acordeon" onclick="respuesta(4,this)">Hacen falta políticas públicas en materia de seguridad.<br>
+                        <input type="radio" value="3" name="btn-acordeon" onclick="respuesta(4,this)">Se deben tomar medidas más extremas como militarizar a las zonas más violentas e inseguras.
+                    </div>
+            </div>
+            <!-sexta pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon5" class="btn-acordeon">
+                <label for="btn-acordeon5">
+                    6.-Inseguridad
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>La inseguridad y delincuencia organizada han rebasado al Estado, países extranjeros han querido intervenir:</label>
+                        <input type="radio" value="1" name="btn-acordeon5" onclick="respuesta(5,this)">Se debe pedir apoyo a países aliados para combatir la delincuencia.<br>
+                        <input type="radio" value="2" name="btn-acordeon5" onclick="respuesta(5,this)">El Estado no debe permitir la intervención extranjera.<br>
+                        <input type="radio" value="3" name="btn-acordeon5" onclick="respuesta(5,this)">Los países deben respetar la soberanía nacional.
+                    </div>
+            </div>
+            <!-septima pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon6" class="btn-acordeon">
+                <label for="btn-acordeon6">
+                    7.-Género
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>En algunas instituciones y centros de trabajo existe un sesgo de paridad de género, así como la falta de inclusión:</label>
+                        <input type="radio" value="1" name="btn-acordeon6" onclick="respuesta(6,this)">Es un fenómeno histórico que nunca se podrá erradicar.<br>
+                        <input type="radio" value="2" name="btn-acordeon6" onclick="respuesta(6,this)">Se ha avanzado en contra de la discriminación, se ha fomentado la inclusión en espacios laborales.<br>
+                        <input type="radio" value="3" name="btn-acordeon6" onclick="respuesta(6,this)">El género no tiene relación con las capacidades de alguien para desarrollar labores, todas las personas deben tener las mismas oportunidades.
+                    </div>
+            </div>
+            <!-octava pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon7" class="btn-acordeon">
+                <label for="btn-acordeon7">
+                    8.-Inmigración
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>Las fronteras son un medio de control para la inmigración:</label>
+                        <input type="radio" value="1" name="btn-acordeon7" onclick="respuesta(7,this)">El Estado debe militarizar las fronteras para evitar el ingreso de más inmigrantes.<br>
+                        <input type="radio" value="2" name="btn-acordeon7" onclick="respuesta(7,this)">Se debe permitir el ingreso de inmigrantes por un lapso, regulando su estancia en el territorio nacional.<br>
+                        <input type="radio" value="3" name="btn-acordeon7" onclick="respuesta(7,this)">Todas las personas son libres de transitar por las fronteras sin importar su nacionalidad.
+                    </div>
+            </div>
+            <!-novena pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon8" class="btn-acordeon">
+                <label for="btn-acordeon8">
+                    9.-Obra pública
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>La educación es un derecho universal, es un medio para lograr una mejor calidad de vida:</label>
+                        <input type="radio" value="1" name="btn-acordeon8" onclick="respuesta(8,this)">Debe cambiar el sistema de educación y formar profesionales más preparados.<br>
+                        <input type="radio" value="2" name="btn-acordeon8" onclick="respuesta(8,this)">Para que exista una mejor educación se debe privatizar la misma.<br>
+                        <input type="radio" value="3" name="btn-acordeon8" onclick="respuesta(8,this)">Tener una carrera universitaria no garantiza un desarrollo económico.
+                    </div>
+            </div>
+            <!-decima pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon9" class="btn-acordeon">
+                <label for="btn-acordeon9">
+                    10.-Tratados internacionales
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>Los sindicatos son necesarios:</label>
+                        <input type="radio" value="1" name="btn-acordeon9" onclick="respuesta(9,this)">Sí, garantizan los derechos laborales de los trabajadores. El Estado debe apoyarlos económicamente.<br>
+                        <input type="radio" value="2" name="btn-acordeon9" onclick="respuesta(9,this)">No, los líderes sindicales son los más beneficiados, los trabajadores son obligados a dar aportaciones económicas.<br>
+                        <input type="radio" value="3" name="btn-acordeon9" onclick="respuesta(9,this)">Son organizaciones políticas que no garantizan los derechos a los trabajadores.
+                    </div>
+            </div>
+            <!-onceaba pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon10" class="btn-acordeon">
+                <label for="btn-acordeon10">
+                    11.-Impuestos
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>El derecho a la salud es algo que el Estado está obligado a garantizar:</label>
+                        <input type="radio" value="1" name="btn-acordeon10" onclick="respuesta(10,this)">Se comprobó que el sistema de salud es ineficiente, la pandemia lo evidenció.<br>
+                        <input type="radio" value="2" name="btn-acordeon10" onclick="respuesta(10,this)">El desabasto de medicamento no se había visto en gobiernos anteriores.<br>
+                        <input type="radio" value="3" name="btn-acordeon10" onclick="respuesta(10,this)">Los médicos y enfermeras cuentan con los medios para brindar un servicio de calidad.
+                    </div>
+            </div>
+            <!-doceaba pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon11" class="btn-acordeon">
+                <label for="btn-acordeon11">
+                    12.-Programas sociales
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>Solo en 5 Estados se ha aprobado la despenalización del aborto de una manera segura y gratuita:</label>
+                        <input type="radio" value="1" name="btn-acordeon11" onclick="respuesta(11,this)">Se debe despenalizar el aborto en todo el país, debe ser seguro y gratuito.<br>
+                        <input type="radio" value="2" name="btn-acordeon11" onclick="respuesta(11,this)">Solo les corresponde a las mujeres decidir sobre el tema.<br>
+                        <input type="radio" value="3" name="btn-acordeon11" onclick="respuesta(11,this)">La Iglesia como institución puede intervenir y dar su opinión a las legislaturas.
+                    </div>
+            </div>
+            <!-treceaba pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon12" class="btn-acordeon">
+                <label for="btn-acordeon12">
+                    13.-Educación
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>Los programas sociales que han sido elevados a rango constitucional, diría que:</label>
+                        <input type="radio" value="1" name="btn-acordeon12" onclick="respuesta(12,this)">Ayudan a los más necesitados, se tienen que aumentar.<br>
+                        <input type="radio" value="2" name="btn-acordeon12" onclick="respuesta(12,this)">No cumplen con su finalidad que es reducir el nivel de pobreza.<br>
+                        <input type="radio" value="3" name="btn-acordeon12" onclick="respuesta(12,this)">Son utilizados con fines políticos, se aprovechan de los más necesitados.
+                    </div>
+            </div>
+            <!-catorceaba pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon13" class="btn-acordeon">
+                <label for="btn-acordeon13">
+                    14.-Sindicatos
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>Existen mega obras en el país que han sido discusión en temas de medio ambiente:</label>
+                        <input type="radio" value="1" name="btn-acordeon13" onclick="respuesta(13,this)">Se deben preservar todas las zonas protegidas.<br>
+                        <input type="radio" value="2" name="btn-acordeon13" onclick="respuesta(13,this)">Es una consecuencia del progreso y éste debe ser la prioridad.<br>
+                        <input type="radio" value="3" name="btn-acordeon13" onclick="respuesta(13,this)">La creación de mega obras genera empleo y desarrollo económico en las zonas de construcción.
+                    </div>
+            </div>
+            <!-quinceaba pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon14" class="btn-acordeon">
+                <label for="btn-acordeon14">
+                    15.-Salud
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>Los tratados internacionales son acuerdos firmados entre países, incluyen temas económicos:</label>
+                        <input type="radio" value="1" name="btn-acordeon14" onclick="respuesta(14,this)">Los tratados sólo benefician a los países más desarrollados.<br>
+                        <input type="radio" value="2" name="btn-acordeon14" onclick="respuesta(14,this)">Acortan la brecha económica entre los países más desarrollados y los que están en vías de desarrollo.<br>
+                        <input type="radio" value="3" name="btn-acordeon14" onclick="respuesta(14,this)">No existe una igualdad económica para firmar tratados, por lo tanto, no se deben firmar acuerdos.
+                    </div>
+            </div>
+            <!-dieciseisaba pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon15" class="btn-acordeon">
+                <label for="btn-acordeon15">
+                    16.-Economía
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>Los impuestos son un medio que usa el Estado para solventar gastos de distinta índole:</label>
+                        <input type="radio" value="1" name="btn-acordeon15" onclick="respuesta(15,this)">El pago de impuestos debe ser proporcional a los salarios, los que más ganan deben pagar más.<br>
+                        <input type="radio" value="2" name="btn-acordeon15" onclick="respuesta(15,this)">El Estado debe reducir los impuestos y aplicarlos de mejor manera a servicios públicos.<br>
+                        <input type="radio" value="3" name="btn-acordeon15" onclick="respuesta(15,this)">Son necesarios, pues el Estado depende de ellos para garantizar su funcionamiento.
+                    </div>
+            </div>
+            <!-decimo septima pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon16" class="btn-acordeon">
+                <label for="btn-acordeon16">
+                    17.-Campo
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>En las últimas semanas el peso mexicano ha aumentado su valor frente al dólar:</label>
+                        <input type="radio" value="1" name="btn-acordeon16" onclick="respuesta(16,this)">Es consecuencia de las buenas decisiones en materia económica por parte del gobierno.<br>
+                        <input type="radio" value="2" name="btn-acordeon16" onclick="respuesta(16,this)">Las remesas no tienen el mismo valor, ya que el dólar cuesta menos.<br>
+                        <input type="radio" value="3" name="btn-acordeon16" onclick="respuesta(16,this)">No beneficia a las familias, la canasta básica es cada vez más cara.
+                    </div>
+            </div>
+            <!-decimo octava pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon17" class="btn-acordeon">
+                <label for="btn-acordeon17">
+                    18.-Pandemia
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>El campo es un sector importante para la economía del país:</label>
+                        <input type="radio" value="1" name="btn-acordeon17" onclick="respuesta(17,this)">Ya no es rentable sembrar materias primas, no se recupera la inversión.<br>
+                        <input type="radio" value="2" name="btn-acordeon17" onclick="respuesta(17,this)">El Estado debe crear más programas sociales para apoyar a los productores y ser autosuficientes.<br>
+                        <input type="radio" value="3" name="btn-acordeon17" onclick="respuesta(17,this)">El libre mercado con otros países afecta a los productores nacionales.
+                    </div>
+            </div>
+            <!-decimo novena pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon18" class="btn-acordeon">
+                <label for="btn-acordeon18">
+                    19.-Aborto
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>En los últimos años y como consecuencia de la pandemia se incrementó el número de desempleados en el país:</label>
+                        <input type="radio" value="1" name="btn-acordeon18" onclick="respuesta(18,this)">Hace falta legislar en materia laboral para que se garantice un empleo digno y bien remunerado.<br>
+                        <input type="radio" value="2" name="btn-acordeon18" onclick="respuesta(18,this)">La preparación profesional es una medida para disminuir el desempleo.<br>
+                        <input type="radio" value="3" name="btn-acordeon18" onclick="respuesta(18,this)">La inversión extranjera ha disminuido por la toma de decisiones de los gobernantes.
+                    </div>
+            </div>
+            <!-segunda decimo pregunta-->
+            <div class="acordeon">
+                <input type="radio" name="acordeon" id="btn-acordeon19" class="btn-acordeon">
+                <label for="btn-acordeon19">
+                    20.-Inversión extranjera
+                </label>
+                    <div class="contenedor-acordeon" class="container">
+                        <label>Existen gobernantes que atraen inversión privada de empresas transnacionales a pesar de la escasez de agua en sus estados:</label>
+                        <input type="radio" value="1" name="btn-acordeon19" onclick="respuesta(19,this)">Todos los gobernantes deberían atraer inversión privada a sus estados.<br>
+                        <input type="radio" value="2" name="btn-acordeon19" onclick="respuesta(19,this)">La escasez de agua es un problema a nivel mundial, se debe sancionar a empresas y gobiernos por la exploración de recursos naturales.<br>
+                        <input type="radio" value="3" name="btn-acordeon19" onclick="respuesta(19,this)">Se debe consultar a la ciudadanía respecto a la instalación de empresas transnacionales en sus estados.
+                    </div>
+            </div>
+            <div class="bt">
+                <a href="resultados.html">
+                    <button>
+                        <span>Enviar</span>
+                    </button>
+                    </a>
+            </div>
+        </div>
+    </div>    
+        <footer class="pie-pagina">
+            <div class="grupo-1">
+                <div class="box">
+                    <figure>
+                        <a href="#">
+                            <img src="logo.png" alt="logo">
+                        </a>
+                    </figure>
+                </div>
+                <div class="box">
+                     <h2>hola guapo</h2>
+                     <p>xdxd</p>
+                     <p>xdxd</p>
+                </div>
+                <div class="box">
+                    <h2>siguenos</h2>
+                    <div class="redes sociales">
+                        <a href="#" class="fa fa-facebook"></a>
+                        <a href="#" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-twiter"></a>
+                        <a href="#" class="fa fa-youtube"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="grupo-2">
+                <small>&copy; 2023 <b>SLee Dw</b> -Todos los Derechos Reservados.</small>
+            </div>
+        </footer>
+        <script src="script.js"></script>
+    </body>
+</html>
